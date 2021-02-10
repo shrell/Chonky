@@ -119,11 +119,13 @@ export const getStripeGradient = (colorOne: string, colorTwo: string) =>
     `${colorTwo} 20px` +
     ')';
 
-export const makeLocalChonkyStyles = <C extends string = string>(
+// @ts-ignore
+export const makeLocalChonkyStyles: any = <C extends string = string>(
     styles: (theme: ChonkyTheme & MuiTheme) => Styles<C>
+    // @ts-ignore
 ) => createUseStyles<ChonkyTheme, C>(styles);
 
-export const makeGlobalChonkyStyles = <C extends string = string>(
+export const makeGlobalChonkyStyles: any = <C extends string = string>(
     makeStyles: (theme: ChonkyTheme & MuiTheme) => Styles<C>
 ) => {
     const selectorMapping = {};

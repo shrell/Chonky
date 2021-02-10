@@ -39,6 +39,7 @@ export const defaultConfig: ChonkyConfig = {
 
 export const setChonkyDefaults = (config: Partial<ChonkyConfig>) => {
     for (const key of Object.keys(config)) {
+        // @ts-ignore
         defaultConfig[key] = config[key];
     }
 };

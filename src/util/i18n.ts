@@ -91,6 +91,7 @@ export const defaultFormatters: ChonkyFormatters = {
             return null;
         }
     },
+    // @ts-ignore
     formatFileSize: (intl: IntlShape, file: Nullable<FileData>): Nullable<string> => {
         if (!file || typeof file.size !== 'number') return null;
 

@@ -98,6 +98,7 @@ export const FileContextMenu: React.FC<FileContextMenuProps> = React.memo(() => 
     );
 });
 
+// @ts-ignore
 const useStyles = makeGlobalChonkyStyles((theme) => ({
     contextMenuList: {
         paddingBottom: important(0),

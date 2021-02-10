@@ -93,6 +93,7 @@ export const useFileDrag = (file: Nullable<FileData>) => {
         item,
         canDrag,
         begin: onDragStart,
+        // @ts-ignore
         end: onDragEnd,
         collect,
     });

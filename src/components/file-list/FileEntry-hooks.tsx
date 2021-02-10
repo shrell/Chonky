@@ -112,7 +112,7 @@ export const useFileNameComponent = (file: Nullable<FileData>) => {
         if (!file) return <TextPlaceholder minLength={15} maxLength={20} />;
 
         let name;
-        let extension = null;
+        let extension: Nullable<string> = null;
 
         const isDir = FileHelper.isDirectory(file);
         if (isDir) {

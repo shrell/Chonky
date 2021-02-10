@@ -38,12 +38,16 @@ export const ChonkyBusinessLogicInner = React.forwardRef<
             defaultConfig.disableDefaultFileActions
         )
     );
+    // @ts-ignore
     useDTE(
+        // @ts-ignore
         reduxActions.setExternalFileActionHandler,
+        // @ts-ignore
         getValueOrFallback(props.onFileAction, defaultConfig.onFileAction)
     );
     useDTE(
         reduxActions.setSelectionDisabled,
+        // @ts-ignore
         getValueOrFallback(
             props.disableSelection,
             defaultConfig.disableSelection,
@@ -65,10 +69,12 @@ export const ChonkyBusinessLogicInner = React.forwardRef<
 
     useDTE(
         reduxActions.setThumbnailGenerator,
+        // @ts-ignore
         getValueOrFallback(props.thumbnailGenerator, defaultConfig.thumbnailGenerator)
     );
     useDTE(
         reduxActions.setDoubleClickDelay,
+        // @ts-ignore
         getValueOrFallback(
             props.doubleClickDelay,
             defaultConfig.doubleClickDelay,
@@ -77,6 +83,7 @@ export const ChonkyBusinessLogicInner = React.forwardRef<
     );
     useDTE(
         reduxActions.setDisableDragAndDrop,
+        // @ts-ignore
         getValueOrFallback(
             props.disableDragAndDrop,
             defaultConfig.disableDragAndDrop,
@@ -85,6 +92,7 @@ export const ChonkyBusinessLogicInner = React.forwardRef<
     );
     useDTE(
         reduxActions.setClearSelectionOnOutsideClick,
+        // @ts-ignore
         getValueOrFallback(
             props.clearSelectionOnOutsideClick,
             defaultConfig.clearSelectionOnOutsideClick,

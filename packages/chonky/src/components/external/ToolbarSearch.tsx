@@ -25,7 +25,7 @@ export const ToolbarSearch: React.FC<ToolbarSearchProps> = React.memo(() => {
     const intl = useIntl();
     const searchPlaceholderString = intl.formatMessage({
         id: getI18nId(I18nNamespace.Toolbar, 'searchPlaceholder'),
-        defaultMessage: 'Search',
+        defaultMessage: 'Rechercher',
     });
 
     const classes = useStyles();

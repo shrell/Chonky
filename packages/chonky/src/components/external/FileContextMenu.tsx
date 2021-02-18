@@ -32,7 +32,7 @@ export const FileContextMenu: React.FC<FileContextMenuProps> = React.memo(() => 
     const browserMenuShortcutString = intl.formatMessage(
         {
             id: getI18nId(I18nNamespace.FileContextMenu, 'browserMenuShortcut'),
-            defaultMessage: 'Browser menu: {shortcut}',
+            defaultMessage: 'Menu du navigateur: {shortcut}',
         },
         { shortcut: <strong>Alt + Right Click</strong> }
     );

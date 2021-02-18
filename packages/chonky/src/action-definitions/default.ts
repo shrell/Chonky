@@ -21,7 +21,7 @@ export const DefaultActions = {
             requiresSelection: true,
             fileFilter: FileHelper.isOpenable,
             button: {
-                name: 'Open selection',
+                name: 'Ouvrir la sélection',
                 toolbar: true,
                 contextMenu: true,
                 group: 'Actions',
@@ -44,7 +44,7 @@ export const DefaultActions = {
         id: 'select_all_files',
         hotkeys: ['ctrl+a'],
         button: {
-            name: 'Select all files',
+            name: 'Sélectionner tout',
             toolbar: true,
             contextMenu: true,
             group: 'Actions',
@@ -67,7 +67,7 @@ export const DefaultActions = {
         id: 'clear_selection',
         hotkeys: ['escape'],
         button: {
-            name: 'Clear selection',
+            name: 'Annuler sélection',
             toolbar: true,
             contextMenu: true,
             group: 'Actions',
@@ -88,7 +88,7 @@ export const DefaultActions = {
             entryHeight: 30,
         },
         button: {
-            name: 'Switch to List view',
+            name: 'Vue : liste',
             toolbar: true,
             icon: ChonkyIconName.list,
             iconOnly: true,
@@ -107,7 +107,7 @@ export const DefaultActions = {
             entryWidth: 220,
         },
         button: {
-            name: 'Switch to Compact view',
+            name: 'Vue : compacte',
             toolbar: true,
             icon: ChonkyIconName.compact,
             iconOnly: true,
@@ -120,7 +120,7 @@ export const DefaultActions = {
         id: 'enable_grid_view',
         fileViewConfig: { mode: FileViewMode.Grid, entryWidth: 165, entryHeight: 130 },
         button: {
-            name: 'Switch to Grid view',
+            name: 'Vue : grille',
             toolbar: true,
             icon: ChonkyIconName.smallThumbnail,
             iconOnly: true,
@@ -134,7 +134,7 @@ export const DefaultActions = {
         sortKeySelector: (file: Nullable<FileData>) =>
             file ? file.name.toLowerCase() : undefined,
         button: {
-            name: 'Sort by name',
+            name: 'Tri par nom',
             toolbar: true,
             group: 'Options',
         },
@@ -146,7 +146,7 @@ export const DefaultActions = {
         id: 'sort_files_by_size',
         sortKeySelector: (file: Nullable<FileData>) => (file ? file.size : undefined),
         button: {
-            name: 'Sort by size',
+            name: 'Tri par taille',
             toolbar: true,
             group: 'Options',
         },
@@ -159,7 +159,7 @@ export const DefaultActions = {
         sortKeySelector: (file: Nullable<FileData>) =>
             file ? file.modDate : undefined,
         button: {
-            name: 'Sort by date',
+            name: 'Tri par date',
             toolbar: true,
             group: 'Options',
         },
@@ -175,7 +175,7 @@ export const DefaultActions = {
             defaultValue: true,
         },
         button: {
-            name: 'Show hidden files',
+            name: 'Montrer fichiers cachés',
             toolbar: true,
             group: 'Options',
         },
@@ -191,7 +191,7 @@ export const DefaultActions = {
             defaultValue: true,
         },
         button: {
-            name: 'Show folders first',
+            name: 'Dossiers en premier',
             toolbar: true,
             group: 'Options',
         },
@@ -219,7 +219,7 @@ export const DefaultActions = {
             defaultValue: false,
         },
         button: {
-            name: 'Enable dark mode',
+            name: 'Mode sombre',
             toolbar: true,
             icon: ChonkyIconName.list,
             iconOnly: true,

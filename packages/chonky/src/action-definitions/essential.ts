@@ -226,7 +226,7 @@ export const EssentialActions = {
             id: 'open_parent_folder',
             hotkeys: ['backspace'],
             button: {
-                name: 'Go up a directory',
+                name: 'Remonter',
                 toolbar: true,
                 contextMenu: false,
                 icon: ChonkyIconName.openParentFolder,
